@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./reportstyles.css"; // Ensure correct path to the external CSS file
+import db from "../firebase.js";
 
 function Reports() {
+  const [patientData, setPatientData] = useState([]);
+
+  useEffect(() => {
+    db.collection("history").onSnapshot((snapshot) => {
+      setPatientData(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
+      );
+    });
+    console.log({ patientData });
+  }, []);
+
   // Dummy data for the line graphs
   const data1 = [40, 80, 60, 90, 70, 50, 85];
   const data2 = [30, 70, 50, 80, 60, 40, 75];
@@ -47,12 +62,7 @@ function Reports() {
             <line x1="0" y1="200" x2="300" y2="200" stroke="black" />
             {/* Y Axis */}
             <line x1="0" y1="0" x2="0" y2="200" stroke="black" />
-            <polyline
-              points={path2}
-              fill="none"
-              stroke="red"
-              strokeWidth="2"
-            />
+            <polyline points={path2} fill="none" stroke="red" strokeWidth="2" />
           </svg>
         </div>
       </div>
@@ -62,12 +72,16 @@ function Reports() {
           <div className="medical-record">
             <p> John Doe</p> &nbsp;
             <p>22/03/2024-Cold</p>&nbsp;
-            <a href="#" download>Download Prescription/Report</a>
+            <a href="#" download>
+              Download Prescription/Report
+            </a>
           </div>
           <div className="medical-record">
             <p> Person 2</p> &nbsp;
             <p>22/03/2022-Asthma</p>&nbsp;
-            <a href="#" download>Download Prescription/Report</a>
+            <a href="#" download>
+              Download Prescription/Report
+            </a>
           </div>
         </div>
       </div>

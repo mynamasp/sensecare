@@ -1,0 +1,54 @@
+/* productstyles.css */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items horizontally to center */
+    justify-content: center; /* Align items vertically to center */
+    height: 100vh; /* Set height to full viewport height */
+  }
+  
+  .product-heading {
+    color: white;
+    margin-top: -200px; /* Add top margin to separate from the grid */
+    font-size: 40px;
+    padding-bottom: 20px
+  }
+  
+  .product-grid {
+    background-color: black; /* Background color for the grid */
+    padding: 20px; /* Padding for the grid */
+    border: 3px solid #fff; /* Border for the grid */
+    border-radius: 10px; /* Border radius for the grid */
+    margin-top: 20px; /* Add top margin to separate from the heading */
+    font-size: 20px;
+    height: 200px;
+    margin-bottom: 30px;
+    width: 800px;
+  }
+  
+  .product-grid p {
+    color: white; /* Text color for the grid content */
+    margin-bottom: 10px; /* Margin bottom for the paragraphs */
+    padding-bottom: 10px;
+  }
+  
+  .product-button-container {
+    display: flex;
+    justify-content: space-between; /* Align buttons at each end */
+    align-items: center; /* Align items horizontally to center */
+    width: 40%; /* Set width to full width of the container */
+    margin-top: 20px; /* Add top margin to separate from the grid */
+  }
+  
+  .product-button {
+    padding: 20px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    width: 250px;
+  }
+  

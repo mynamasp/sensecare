@@ -1,0 +1,37 @@
+/* styles.css */
+body {
+    background-color: #ff4545; /* Set the overall background color */
+  }
+  
+  .login-container {
+    text-align: center;
+    margin-top: 50px; /* Adjust the margin to center the login container */
+    margin-bottom: 500px;
+  }
+  
+  h3 {
+    font-size: 125px; /* Increase the size of h3 */
+    padding: 5px;
+  }
+  h4 {
+    font-size: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 190px;
+  }
+  
+  .button-row {
+    background-color: black; /* Set background color for the button row */
+    padding: 20px 0; /* Add padding for spacing */
+  }
+  
+  .login-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  

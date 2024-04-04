@@ -1,0 +1,59 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Genos", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #e74c3c; /* The salmon red background color */
+  color: white;
+}
+
+.app-container {
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.app-header {
+  font-size: 5em; /* Adjust size to match design */
+  font-weight: bold;
+  letter-spacing: 0.2em; /* Adjust spacing to match design */
+}
+
+.app-subheader {
+  font-size: 1.2em; /* Adjust size to match design */
+  margin: 20px 0; /* Provide some spacing between header and sub-header */
+  max-width: 800px; /* Adjust width as needed */
+  padding: 0 20px;
+}
+
+.login-container {
+  margin: 30px 0; /* Spacing around the login area */
+}
+
+.login-button {
+  background-color: #000; /* Black background for the login button */
+  border: none;
+  color: white;
+  padding: 10px 50px; /* Larger padding for a wider button */
+  font-size: 1.5em; /* Larger text for the button */
+  cursor: pointer;
+  border-radius: 5px; /* Optional: if you want rounded corners */
+}
+
+/* Add hover effect for button */
+.login-button:hover {
+  background-color: #333; /* Slightly lighter black for hover effect */
+}
+
+input {
+  margin-left: 20px;
+  margin-right: 20px;
+
+}

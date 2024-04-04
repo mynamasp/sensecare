@@ -45,6 +45,8 @@ body {
   font-size: 1.5em; /* Larger text for the button */
   cursor: pointer;
   border-radius: 5px; /* Optional: if you want rounded corners */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Add hover effect for button */

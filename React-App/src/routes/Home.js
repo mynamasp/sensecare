@@ -6,11 +6,13 @@ function Home() {
     <div className="home-profile">
       <div className="profile">
         <img
-          src="https://via.placeholder.com/150"
+          src="https://i.imgur.com/9q5qsEo.png"
           alt="Person"
           className="profile-image"
         />
-      <h2 className="name" style={{ color: 'white' }}>John Doe</h2>
+        <h2 className="name" style={{ color: "white" }}>
+          SRIVINAYAN
+        </h2>
       </div>
       <div className="home-grid">
         <div className="grid-container">
@@ -28,9 +30,9 @@ function Home() {
             <h3>User Info</h3>
             <div className="grid-content">
               <p>Gender &nbsp;: &nbsp; Male</p>
-              <p>Weight  &nbsp;: &nbsp; 70kg</p>
-              <p>Height  &nbsp;: &nbsp; 170cm</p>
-              <p>D.O.B  &nbsp;: &nbsp; 02/03/2005</p>
+              <p>Weight &nbsp;: &nbsp; 70kg</p>
+              <p>Height &nbsp;: &nbsp; 170cm</p>
+              <p>D.O.B &nbsp;: &nbsp; 02/03/2005</p>
             </div>
           </div>
         </div>

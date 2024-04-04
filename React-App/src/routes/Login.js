@@ -1,16 +1,21 @@
 import Web3 from "web3";
 import { useState } from "react";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles.css"; // Import the external CSS file
 
 const Login = () => {
   const [address, setAddress] = useState("");
 
+  useEffect(() => {
+    setAddress("");
+    console.log(address);
+  }, []);
   const navigate = useNavigate();
 
   const handleLogin = async () => {
+    setAddress("");
     // Redirect to the Home page
     try {
       if (window?.ethereum?.isMetaMask) {
@@ -21,7 +26,9 @@ const Login = () => {
 
         const account = Web3.utils.toChecksumAddress(accounts[0]);
         setAddress(account);
-        navigate("/home");
+        if (!address) {
+          navigate("/home");
+        }
       }
     } catch (error) {
       console.log(error);

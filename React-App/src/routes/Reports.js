@@ -56,21 +56,24 @@ function Reports() {
       <div className="grid-container">
         <div className="grid-item">
           <h5>Average HR (Last 7 Days) </h5>
-          <svg width="300" height="200">
-            {/* X Axis */}
-            <line x1="0" y1="200" x2="300" y2="200" stroke="black" />
-            {/* Y Axis */}
-            <line x1="0" y1="0" x2="0" y2="200" stroke="black" />
-            <polyline
-              points={path1}
-              fill="none"
-              stroke="blue"
-              strokeWidth="2"
-            />
-          </svg>
+          <a href="https://sepolia.etherscan.io/address/0x97495714fcaad7506f5299fba2768271cc0f82b5">
+            <svg width="300" height="200">
+              {/* X Axis */}
+              <line x1="0" y1="200" x2="300" y2="200" stroke="black" />
+              {/* Y Axis */}
+              <line x1="0" y1="0" x2="0" y2="200" stroke="black" />
+              <polyline
+                points={path1}
+                fill="none"
+                stroke="blue"
+                strokeWidth="2"
+              />
+            </svg>
+          </a>
         </div>
         <div className="grid-item">
           <h5>Average spO2 (Last 7 Days)</h5>
+          <a href="https://sepolia.etherscan.io/address/0x97495714fcaad7506f5299fba2768271cc0f82b5">
 
           <svg width="300" height="200">
             {/* X Axis */}
@@ -79,6 +82,7 @@ function Reports() {
             <line x1="0" y1="0" x2="0" y2="200" stroke="black" />
             <polyline points={path2} fill="none" stroke="red" strokeWidth="2" />
           </svg>
+          </a>
         </div>
       </div>
       <div className="text-grid">
